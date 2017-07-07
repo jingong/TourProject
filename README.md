@@ -16,3 +16,5 @@
 前端截图如下：<br>
 ![](https://github.com/jingong/TourProject/blob/master/screenshot/1.png)<br>
 ![](https://github.com/jingong/TourProject/blob/master/screenshot/2.png)<br>
+<img width="650px" height="350px" src="https://github.com/jingong/TourProject/blob/master/screenshot/1.png" /><br>
+<img width="650px" height="350px" src="https://github.com/jingong/TourProject/blob/master/screenshot/2.png" /><br>
