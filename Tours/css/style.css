@@ -1,0 +1,243 @@
+@charset "utf-8";
+/*把所有的样式全部设置为0*/
+*{
+	margin: 0;
+	padding: 0;
+}
+html,body{
+	/*设置最小高度*/
+	min-height: 100%;
+}
+body{
+	/*参数一：图片链接地址   参数二：图片的平铺方式*/
+	/*参数三：背景图片水平方向的位置，取值left right center px 或者百分比  
+	 *  参数四：背景图片垂直方向上的位置 像素或者是百分比*/
+	background:#000000 url(../images/timg2.jpeg) no-repeat center center;
+	/*设置背景图片的大小，cover正好覆盖    contain正好包裹在容器内 取值还可以是百分比或者是像素*/
+	background-size: cover;
+}
+.header{
+	width: 100%;
+	height: 50px;
+	background: rgba(0,0,0,0.6);
+	/*固定定位  参照物为当前窗口*/
+	position: fixed;
+	left: 0;
+	top: 0;
+	z-index: 99;
+}
+ul,li{
+	/*去掉默认样式*/
+	list-style: none;
+}
+.head{
+	width: 800px;
+	height: 50px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+.head li{
+	float: left;
+}
+#icon{
+	width: 35px;
+	height: 35px;
+	border: 1px solid palevioletred;
+	border-radius: 5px;
+	/*参数一：上下外边距    参数二：左右边距*/
+	margin: 9px 30px;
+}
+
+#music{
+	width: 40px;
+	height: 40px;
+	margin: 5px 30px;
+	/*参数一：绑定在keyfream上的名称      参数二：时间*/
+	/*参数三：执行动画的延迟     参数四：动画执行的次数*/
+	/*动画运动的曲线ease linear   参数六：动画是否反执行*/
+	animation: xuanzhuan 2s linear infinite;
+}
+@keyframes xuanzhuan{
+	/*from相当于0%*/
+	from{transform: rotate(0);}
+	/*to相当于100%*/
+	to{transform: rotate(360deg);}
+}
+#user{
+	/*字体大小*/
+	font-size: 15px;
+	/*字体颜色*/
+	color: white;
+	/*字体加粗*/
+	font-weight: bolder;
+	/*字体居中*/
+	text-align: center;
+	/*当行高与高度保持一致的时候，字体会垂直居中显示*/
+	line-height: 50px;
+}
+/*选中最后一个li让它右 浮动*/
+.head .last{
+	float: right;
+}
+#time{
+	height: 50px;
+	line-height: 50px;
+	color: white;
+	font-weight: bolder;
+	font-size: 18px;
+	margin-right: 30px;
+}
+.banner{
+	/*绝对定位，参照物为具有定位属性的父元素*/
+	position: absolute;
+	left: 0;
+	top: 50px;
+	width: 100%;
+	height: 400px;
+	background: url(../images/5.jpg) no-repeat center center;
+	background-size: 100%;
+}
+.banner img{
+	width: 100%;
+}
+.sender{
+	width: 100%;
+	position: absolute;
+	left: 0;
+	top: 450px;
+}
+.sender form{
+	width: 800px;
+	margin: 50px auto;
+	
+}
+.sender #description{
+	width: 100%;
+	height: 150px;
+	border: 1px solid paleturquoise;
+}
+.sender .borders1,.sender .borders2{
+	display: block;float: left;
+	width: 350px;
+	height: 50px;
+	border: 2px dotted gray;
+	background: white;
+	text-align: center;
+	/*固定盒子大小不变*/
+	box-sizing: border-box;
+	position: relative;
+}
+.sender span{
+	position: absolute;
+	display: block;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	line-height: 50px;
+}
+.sender input[type=file]{	
+	position: absolute;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	/*设置透明度 0：全透明不显示  1：不透明*/
+	opacity: 0;
+}
+.sender .borders2{
+	float: right;
+}
+.sender input[type=button]{
+	width: 100px;
+	height: 50px;
+	background: gray;
+	border: none;
+	font-size: 18px;
+	font-weight: bolder;
+	
+}
+.content{
+	width: 100%;
+	height: 900px;
+	position: absolute;
+	left: 0;
+	top: 750px;
+}
+#diary{
+	width: 800px;
+	margin: 0 auto;
+	background: whitesmoke;
+	border-radius: 10px;
+}
+.imgbox{
+	width: 750px;
+	margin: 20px auto;
+	border: 2px solid gainsboro;
+	height: 400px;
+	overflow: hidden;
+}
+.imgbox .imgbox-left,.imgbox .imgbox-right{
+	float: left;
+}
+.imgbox .imgbox-left{
+	width: 500px;
+	height: 100%;
+}
+.imgbox .images{
+	width: 100%;
+	height: 100%;
+}
+.imgbox .imgbox-right{
+	border: 1px solid gray;
+	height: 398px;
+	width: 248px;
+}
+.delete{
+	float: right;
+	margin: 20px;
+	color: brown;
+	font-size: 18px;
+	font-weight: bolder;
+}
+.descript{
+	margin-top: 80px;
+	margin-left: 20px;
+	font-size: 12px;
+	color: gray;
+}
+.iconbox{
+	margin-top: 200px;
+	height: 40px;
+	line-height: 40px;
+}
+.iconbox img{
+	margin: 0 10px 0px 20px;
+	width: 40px;
+	height: 40px;
+	border-radius: 50%;
+}
+.iconbox .users,.iconbox .times{
+	font-size: 14px;
+	color: gray;
+	margin-right: 20px;
+}
+.share{
+	margin-top: 20px;
+	
+}
+.sharemusic{
+	margin-left: 20px;
+	font-size: 14px;
+	animation: changes 4s infinite;
+}
+@keyframes changes{
+	from{color: palegreen;}
+	25%{color: palevioletred;}
+	50%{color: goldenrod;}
+	75%{color: green;}
+	to{color: purple}
+}
+.downloads{
+	font-size: 14px;
+	margin-left: 30px;
+}
+

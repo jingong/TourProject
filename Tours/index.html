@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8" />
+		<title>旅游日记</title>
+		<link rel="stylesheet" type="text/css" href="css/style.css"/>
+	</head>
+	<body>
+		<div class="header">
+			<ul class="head">
+				<li><img id="icon" src="images/5.jpg"/></li>
+				<li><p id="user">贾金公</p></li>
+				<li><img id="music" onclick="playMusic(this)" src="images/musicBtn.png"/></li>
+				<li class="last"><p id="time">00:00:00</p></li>
+			</ul>
+			<!--src:音乐链接地址-->
+			<!--autoplay：自动播放-->
+			<!--loop：单曲循环-->
+			<audio id="player" src="mp3/Sugar.mp3" autoplay="autoplay" loop="loop">
+				
+			</audio>
+		</div>
+		
+		<div class="banner">
+			
+		</div>
+		
+		<div class="sender">
+			<form id="formdata" method="post" enctype="multipart/form-data">
+				<textarea id="description" name="description"></textarea>
+				<a class="borders1">
+					<span >上传图片</span>
+					<input type="file" name="photo" id="photo" />
+				</a>
+				<input type="button" value="发表" onclick="return commitData()"/>
+				<a class="borders2">
+					<span>上传音乐</span>
+					<input type="file" name="musicfile" id="musicfile" />
+				</a>
+			</form>
+		</div>
+		
+		<div class="content">
+			<div id="diary">
+				<div class="imgbox">
+					<div class="imgbox-left">
+						<img class="images" src="images/6.jpg" />
+					</div>
+					<div class="imgbox-right">
+						<a class="delete" href="#">删除</a>
+						<p class="descript">
+							一生有你
+						</p>
+						<div class="iconbox">
+							<img src="images/5.jpg" />
+							<span class="users">贾金公</span>
+							<span class="times">发表时间</span>
+						</div>
+						<div class="share">
+							<span class="sharemusic">分享音乐：一生有你</span>
+							<a class="downloads" href="#">下载</a>
+						</div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		<script src="js/jquery-2.1.0.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/music.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/time.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/main.js" type="text/javascript" charset="utf-8"></script>
+		<script src="js/createbox.js" type="text/javascript" charset="utf-8"></script>
+	</body>
+</html>
