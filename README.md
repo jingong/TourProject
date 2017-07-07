@@ -14,5 +14,5 @@
 6.查看说说<br>
 
 前端截图如下：<br>
-![](https://github.com/jingong/TourProject/tree/master/screenshot/1.png）<br>
-![](https://github.com/jingong/TourProject/tree/master/screenshot/2.png）<br>
+![](https://github.com/jingong/TourProject/tree/master/screenshot/1.png)<br>
+![](https://github.com/jingong/TourProject/tree/master/screenshot/2.png)<br>
